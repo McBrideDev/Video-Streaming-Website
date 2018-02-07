@@ -1,0 +1,65 @@
+/*
+    Codo Player Advertising Plugin stylesheet
+    Copyright (C) Donato Software House
+*/
+
+.codo-player-ad-click-space {
+    cursor: pointer;
+}
+
+.codo-player-ad-timer {
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.codo-player-ad-skip-btn {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: rgba(255, 255, 255, .3);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.codo-player-ad-skip-btn:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
+.codo-player-ad-nonlinear-parent {
+    display: inline-table;
+    color: white;
+    background: black;
+}
+
+.codo-player-ad-nonlinear-parent a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+.codo-player-ad-nonlinear-header {
+    top: 0;
+    left: 0;
+    padding: 2px;
+    background: #16223c;
+    font-size: 12px;
+}
+
+.codo-player-ad-nonlinear-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 6px 4px 8px;
+    background: #143b66;
+    cursor: pointer;
+}
+
+.codo-player-ad-nonlinear-close-btn:hover {
+    background: #3a8ac9;
+}

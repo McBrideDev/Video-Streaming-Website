@@ -1,0 +1,27 @@
+$primary-color: red; // #fff default
+
+$primary-background-color: #2B333F;  // #2B333F default
+
+/* background and color button */
+.btn-signup, .panel-primary>.panel-heading, .btn-primary , .ajax-file-upload, 
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+{
+    background-color:$primary-background-color !important;
+    color: $primary-color !important;
+}
+.btn-signup:hover, .btn-signup:focus, .btn-primary:hover, .btn-primary:focus {
+    background-color: $primary-background-color !important;
+    color: $primary-color !important;
+}
+
+/* color links */
+.image-left .col h3 a, #forgot-password a, .page-channel h1, .pornstars_page h1, .ticker-container ul div li a , .bottom-header span,
+.pornstars_page .container-fluid .titile-cate .rate-filter ul li a, .page-channel .container-fluid .titile-cate .rate-filter ul li a, 
+.channel-content .col-20 .channel-col h4 a, .page-channel .col-xs-12 .channel-col h4 a, 
+.page-channel .channel-bg h3 a, .page-channel .channel-bg h3, .channel-hd-description span, .click-here, .member-navbar .member-menu a
+ {
+    color: $primary-color !important;
+}
+.ajax-upload-dragdrop {
+    border: 2px dotted $primary-color !important;
+}

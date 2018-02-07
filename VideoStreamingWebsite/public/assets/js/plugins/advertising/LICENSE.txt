@@ -1,0 +1,89 @@
+Codo Player Advertising Plugin 2.0
+Copyright (C) Donato Software House
+
+
+SOFTWARE LICENSE AGREEMENT
+
+Notice
+
+YOU MUST READ AND AGREE TO THE TERMS OF THIS SOFTWARE LICENSE AGREEMENT BEFORE PURCHASING CODO PLAYER ADVERTISING PLUGIN. BY PURCHASING, DOWNLOADING, INSTALLING OR USING THIS SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS SOFTWARE LICENSE AGREEMENT. IF YOU DO NOT ACCEPT THE TERMS AND CONDITIONS OF THIS AGREEMENT, DO NOT PURCHASE, DOWNLOAD, INSTALL OR USE THIS SOFTWARE.
+
+
+Definitions
+
+For the purpose of this agreement, the following terms shall have the following meanings:
+1. Licensor – Donato Software House Limited.
+2. Software – Codo Player Advertising Plugin.
+3. License – Software License Agreement (this document).
+4. Licensee – Software user, exercising rights under this License.
+5. Documentation – A set of instructions on how to use the Software (see codoplayer.com).
+6. Branding – A material forming corporate visual identity (image logo or text).
+
+
+Parties
+
+This is an agreement between the Licensor and Licensee in which the Licensor grants Licensee certain rights in the Software, subject to the terms and conditions of this agreement. This agreement is entered at the moment of Software license purchase.
+
+
+Witnesseth
+
+Licensor is engaged in the business of designing and developing computer software and has created and developed a software package "Codo Player Advertising Plugin" that is intended to serve as a web player for your online media content.
+
+
+Ownership
+
+Licensor is the owner of all intellectual property rights of the Software.
+
+
+License Grant
+
+Licensor hereby grants Licensee, a non-exclusive, non-assignable and non-transferable right to setup and exercise the use of Software on terms of Documentation, under a host (internet domain name), provided by Licensee, registered with Licensor. No right is being conveyed to Licensee to setup and use the Software under any other host, not registered with Licensor.
+Licensor grants Licensee the right to add custom Branding on Software canvas.
+Licensor grants Licensee the right to adapt the Software by amending the source only if the source code is kept attributed back to Software.
+In case of adaption, security logic implemented into Software must not be affected, altered or removed in any way and must be functional at all times.
+Licensee is prohibited from using the Software in any manner other than as described above.
+
+
+Termination
+
+Licensor may terminate this License at any time in the case where:
+1. Licensee is in breach of any of this License's terms and conditions.
+2. Licensee entered into any arrangement which caused Licensor to be unable to enforce his rights under this License.
+
+
+No warranty
+
+There is no warranty for the Software, to the extent permitted by applicable law. The Licensor provides the program "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of the Software is with Licensee. Should the Software prove defective, Licensee assume the cost of all necessary servicing, repair or correction.
+
+
+Limitation of Liability
+
+In no event unless required by applicable law will the Licensor be liable to Licensee for damages, including any general, special, incidental or consequential, indirect, punitive damages arising out of the use or inability to use the Software (including but not limited to loss of data or data being rendered inaccurate or losses sustained by Licensee or third parties including third party claims of infringement of intellectual property rights, copyright or trademark).
+
+
+Indemnity
+
+Licensee hereby warrants to indemnify Licensor, its officers, directors, agents, and employees for all damages, expenses, losses and costs (including attorney fees) as well as for any third-party claim for infringement of its intellectual property rights incurred in regards to Licensee’s use of the Software.
+
+
+Severability
+
+If any provision hereof is held invalid or unenforceable by a court of competent jurisdiction, such invalidity shall not affect the validity or operation of any other provision and such invalid provision shall be deemed to be severed from the Agreement.
+
+
+Complete Agreement
+
+This License constitutes the entire agreement between the parties in regards of use of the Software. No one other than Licensor has the right to change or modify this License.
+
+
+Governing Law, Jurisdiction
+
+This License shall be governed by the laws of United Kingdom without regard to principles of conflict of laws.
+
+
+Waiver
+
+No waiver shall be deemed as a waiver of any prior or subsequent default of the same or other provisions of this Agreement.
+
+
+END OF SOFTWARE LICENSE AGREEMENT

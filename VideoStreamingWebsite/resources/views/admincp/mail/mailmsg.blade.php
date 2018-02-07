@@ -1,0 +1,1 @@
+<h2>Hi {{$name}}:  you have a message form user on website please check administrator.</h2>

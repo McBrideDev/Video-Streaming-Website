@@ -1,0 +1,337 @@
+.brick-wrapper .cf:before,
+.brick-wrapper .cf:after {
+	content: " ";
+	display: table;
+}
+.brick-wrapper .cf:after {
+	clear: both;
+}
+.brick-wrapper .cf {
+	*zoom: 1;
+}
+.brick-wrapper * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.brick-wrapper {
+	width: 280px;
+	min-width: 280px;
+	height: auto;
+	position: relative;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: normal;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.brick-header {
+	width: 280px;
+	height: 90px;
+	color: #fff;
+	border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	padding-top: 25px;
+	text-align: center;
+	position: relative;
+	border-top: 2px solid rgba(255,255,255,.2);
+	background: #333 url(https://api.paymentwall.com/brick/templates/images/noise.png) repeat;
+}
+.brick-merchant-name {
+	font-size: 22px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
+	line-height: normal;
+	-moz-text-shadow: 2px 2px 0px rgba(0,0,0,0.25);
+	-webkit-text-shadow: 2px 2px 0px rgba(0,0,0,0.25);
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.25);
+}
+.brick-product-name {
+	font-size: 14px;
+	font-family: 'Helvetica', sans-serif;
+	line-height: normal;
+	margin-top: 5px;
+}
+.brick-form {
+	padding: 30px;
+	background: #f7f7f7;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
+::-webkit-input-placeholder {color: rgba(51,51,51,.5); font-size: 13px; letter-spacing: 0; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal;}
+:-moz-placeholder {color: rgba(51,51,51,.5); opacity: 1; font-size: 13px; letter-spacing: 0; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal;}
+::-moz-placeholder {color: rgba(51,51,51,.5); opacity: 1; font-size: 13px; letter-spacing: 0; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal;}
+:-ms-input-placeholder {color: rgba(51,51,51,.5); font-size: 13px; letter-spacing: 0; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal;}
+
+.brick-input-l {
+	width: 220px;
+	height: 40px;
+	border: 1px solid #d6d6d6;
+	padding: 0 0 0 35px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.1em;
+}
+.brick-input-s {
+	width: 110px;
+	height: 40px;
+	float: left;
+	border: 1px solid #d6d6d6;
+	padding: 0 0 0 35px;
+	border-top: none;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.1em;
+}
+
+.brick-input-l:focus {box-shadow: 0 0 5px 1px rgba(65,187,242,.2); border: 1px solid #41bbf2; outline: none;}
+.brick-iw-cc .brick-input-l {-webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0;}
+.brick-iw-exp .brick-input-s {-webkit-border-radius: 0 0 0 3px; -moz-border-radius: 0 0 0 3px; border-radius: 0 0 0 3px;}
+.brick-iw-cvv .brick-input-s {-webkit-border-radius: 0 0 3px 0; -moz-border-radius: 0 0 3px 0; border-radius: 0 0 3px 0; border-left: none;}
+.brick-iw-email .brick-input-l {-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; letter-spacing: 0;}
+.brick-iw-email {display: inline-block; margin-top: 20px;}
+
+.brick-input-s:focus {box-shadow: 0 0 5px 1px rgba(65,187,242,.2); border: 1px solid #41bbf2; outline: none;}
+.brick-iw-cvv .brick-input-s:focus {padding: 0 0 0 34px;}
+
+.brick-iw-cc:before,
+.brick-iw-exp:before,
+.brick-iw-cvv:before,
+.brick-iw-email:before {content: ""; position: absolute; background: url(https://api.paymentwall.com/brick/templates/images/brick-form-sprite.png) no-repeat; width: 20px; height: 20px;}
+
+.brick-iw-cc:before {background-position: -22px 0; margin: 8px 0 0 11px;}
+.brick-iw-exp:before {background-position: -46px 0; margin: 8px 0 0 11px;}
+.brick-iw-cvv:before {background-position: -71px 0; margin: 8px 0 0 11px;}
+.brick-iw-email:before {background-position: 0 0; margin: 8px 0 0 11px;}
+
+.brick-input-wrapper {display: inline-block;}
+.brick-email input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.brick-submit {
+	width: 220px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	margin-top: 30px;
+	color: #333;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	outline: none;
+	background: -moz-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(239,194,89) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(239,194,89) 100%);
+	background: -ms-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(239,194,89) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFC03A', endColorstr='#EFc259');
+	-moz-text-shadow: 1px 1px 0px rgba(255,255,255,0.25);
+	-webkit-text-shadow: 1px 1px 0px rgba(255,255,255,.25);
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.25);
+	-moz-box-shadow: 0.5px 0.8px 0px 0px rgb(239,137,5);
+	-webkit-box-shadow: 0.5px 0.8px 0px 0px rgb(239,137,5);
+	box-shadow: 0.5px 0.8px 0px 0px rgb(239,137,5);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-transition: box-shadow .5s linear;
+	-webkit-transition: box-shadow .5s linear;
+	transition: box-shadow .5s linear;
+}
+.brick-submit:hover {
+	background: -moz-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(255,217,134) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(255,217,134) 100%);
+	background: -ms-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(255,217,134) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFC03A', endColorstr='#FFD986');
+}
+.brick-submit.brick-active {
+	background: -moz-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(239,194,89) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(239,194,89) 100%);
+	background: -ms-linear-gradient(90deg, rgb(255,192,58) 0%, rgb(239,194,89) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFC03A', endColorstr='#EFc259');
+	-moz-box-shadow: 0.5px 0.8px 0px 0px rgb(239,137,5), inset 0 0 20px rgba(251,247,193,0.7);
+	-webkit-box-shadow: 0.5px 0.8px 0px 0px rgb(239,137,5), inset 0 0 20px rgba(251,247,193,0.7);
+	box-shadow: 0.5px 0.8px 0px 0px rgb(239,137,5), inset 0 0 20px rgba(251,247,193,0.7);
+	-moz-transition: box-shadow .5s linear;
+	-webkit-transition: box-shadow .5s linear;
+	transition: box-shadow .5s linear;
+}
+.brick-submit.brick-complete {
+	background: -moz-linear-gradient(90deg, rgb(141,77,38) 0%, rgb(95,188,78) 0%, rgb(113,191,68) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(141,77,38) 0%, rgb(95,188,78) 0%, rgb(113,191,68) 100%);
+	background: -ms-linear-gradient(90deg, rgb(141,77,38) 0%, rgb(95,188,78) 0%, rgb(113,191,68) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5FBC4E', endColorstr='#71BF44');
+	box-shadow: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.brick-submit.brick-complete:before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	display: block;
+	background: url(https://api.paymentwall.com/brick/templates/images/brick-form-sprite.png) no-repeat;
+	background-position: -217px 0;
+	margin: 0 auto;
+	-webkit-animation-name: brick-complete;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	animation-name: brick-complete;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+}
+
+.brick-footer {margin: 6px 0 0 0;}
+.brick-logo {float: left; width: 58px; height: 27px; background: url(https://api.paymentwall.com/brick/templates/images/brick-form-sprite.png) no-repeat; background-position: -246px 0; text-indent: -9999px;}
+.brick-secure {float: right; margin: 6px 0 0 0; color: rgba(236,236,236,.5); font-size: 12px; position: relative; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal;}
+a.brick-secure-link, a.brick-secure-link:hover, a.brick-secure-link:visited, a.brick-secure-link:active {color: #cccccc; color: rgba(236,236,236,.5); font-size: 12px;}
+.brick-secure:before {content: ""; display: block; width: 20px; height: 20px; background: url(https://api.paymentwall.com/brick/templates/images/brick-form-sprite.png) no-repeat; background-position: -164px 0; position: absolute; left: -24px; top: -6px;}
+#err-container {background: #f7f7f7; padding: 15px 30px 0 30px; font-size: 12px; display: none; color: red; text-align: center;}
+.err-input {box-shadow: inset 0 0 0 1px red;}
+
+
+.brick-iw-cvv {position: relative;}
+.brick-cvv-icon {width: 20px; height: 22px; background: url(https://api.paymentwall.com/brick/templates/images/brick-form-sprite.png) no-repeat; position: absolute; right: 8px; top: 8px; cursor: pointer;}
+.brick-icon-info {background-position: -142px 0;}
+.brick-icon-info-close {background-position: -190px 0; display: none;}
+.brick-info-cont {display: none; padding: 15px; background: rgba(90,90,90,0.95); color: #fff; font-size: 10px; position: absolute; width: 150px; right: -150px; top: -20px;}
+.brick-info-cont:before {content: ""; display: block; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 7px solid #5a5a5a; width: 0; height: 0; position: absolute; left: -5px; top: 35px;}
+.brick-info-cont span {color: #ffc03a;}
+
+
+.brick-submit.brick-loading .brick-submit-text, 
+.brick-submit.brick-complete .brick-submit-text {display: none;}
+.brick-submit.brick-loading .brick-loader-s {display: block;}
+
+.brick-loader-s {
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	width: 32px;
+	height: 10px;
+	text-align: left;
+}
+
+.brick-loader-dots:before,
+.brick-loader-dots:after {
+	content: '';
+	height: 10px;
+	width: 20px;
+	position: absolute;
+	background-position: 0%, 100%;
+	background-size: 7px 7px, 7px 7px;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(closest-side, #333 100%, transparent), radial-gradient(closest-side, #333 100%, transparent);
+
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: spin, onOff;
+			animation-duration: 0.8s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-name: spin, onOff;
+}
+.brick-loader-dots:before {
+	background-image: radial-gradient(closest-side, #333 100%, transparent), radial-gradient(closest-side, #333 100%, transparent);
+
+	-webkit-animation-direction: normal, reverse;
+			animation-direction: normal, reverse;
+}
+.brick-loader-dots:after {
+	right: 0px;
+
+	-webkit-animation-direction: reverse, normal;
+			animation-direction: reverse, normal;
+}
+.brick-loader-dots {
+	height: 10px;
+	width: 32px;
+	background-repeat: no-repeat;
+	background-position: 0%, 100%;
+	background-size: 7px 7px, 7px 7px;
+	background-image: radial-gradient(closest-side, #333 100%, transparent), radial-gradient(closest-side, #333 100%, transparent);
+
+	-webkit-animation: toggle 0.8s ease-in-out infinite;
+			animation: toggle 0.8s ease-in-out infinite;
+}
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	50% {-webkit-transform: rotate(180deg); transform: rotate(180deg);}
+	100% {-webkit-transform: rotate(180deg) transform: rotate(180deg);}
+}
+@keyframes spin {
+	0% {-webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);}
+	50% {-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
+	100% {-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
+}
+@-webkit-keyframes onOff {
+	0% {opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; filter: alpha(opacity=0); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	49% {opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; filter: alpha(opacity=0); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	50% {opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=1); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";}
+	100% {opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=1); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";}
+}
+@keyframes onOff {
+	0% {opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; filter: alpha(opacity=0); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	49% {opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; filter: alpha(opacity=0); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	50% {opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=1); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";}
+	100% {opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=1); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";}
+}
+@-webkit-keyframes toggle {
+	0% {background-size: 0px 0px, 7px 7px}
+	49.9% {background-size: 0px 0px, 7px 7px}
+	50% {background-size: 7px 7px, 0px 0px}
+	100% {background-size: 7px 7px, 0px 0px}
+}
+@keyframes toggle {
+	0% {background-size: 0px 0px, 7px 7px}
+	49.9% {background-size: 0px 0px, 7px 7px}
+	50% {background-size: 7px 7px, 0px 0px}
+	100% {background-size: 7px 7px, 0px 0px}
+}
+
+@-webkit-keyframes brick-complete {
+	0% {-webkit-transform: scale(.7); transform: scale(.7);}
+	50% {-webkit-transform: scale(1.4); transform: scale(1.4);}
+	100% {-webkit-transform: scale(1); transform: scale(1);}
+}
+@keyframes brick-complete {
+	0% {-webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7);}
+	50% {-webkit-transform: scale(1.4); -ms-transform: scale(1.4); transform: scale(1.4);}
+	100% {-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
+}
+.brick-ie .brick-info-cont {
+	background: #5a5a5a;
+}
+.brick-ie .brick-loader-s {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	background: url(https://api.paymentwall.com/brick/templates/images/brick-preloader-ie.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.brick-ie .brick-loader-dots:before,
+.brick-ie .brick-loader-dots:after,
+.brick-ie .brick-loader-dots,
+input[type=text]::-ms-clear,
+input[type=text]::-ms-reveal,
+input::-ms-clear,
+input::-ms-reveal,
+::-ms-clear,
+::-ms-reveal {
+	display: none!important;
+	width: 0;
+	height: 0;
+}

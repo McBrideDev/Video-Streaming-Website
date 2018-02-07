@@ -1,0 +1,419 @@
+/*
+
+Read the comments, they tell you what you change when you change ;)
+
+*/
+
+/* Reset */
+.fn-container div,
+.fn-container h3,
+.fn-container h4,
+.fn-container ul,
+.fn-container li,
+.fn-container span,
+.fn-container a,
+.fn-container img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	list-style: none;
+	list-style-type: none;
+	max-width: 100%;
+	outline: none;
+}
+
+.fn-container {
+	font-size: 11px; /* Set here the text size of all text elements */
+	line-height: 18px;
+	max-width: 100%;
+	position: relative;
+}
+
+.fn-container > div {
+	display: none;
+}
+
+.fn-news-list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	list-style: none !important;
+	list-style-type: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* the box of the preview */
+.fn-news-list .fn-preview {
+	width: 100%;
+	cursor: pointer;
+	overflow: hidden;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	margin-left: 0 !important;
+	padding: 0 !important;
+	background-image: none !important;
+}
+
+/* the thumbnail in the previews */
+.fn-preview	> img	{
+	margin: 10px; /* Set here the margin for every thumbnail */
+	border-width: 1px;
+	border-style: solid;
+	float: left;
+	max-width: 120px;
+	max-height: 75%;
+}
+
+/* the text box in the previews */
+.fn-preview	> div	{
+	margin: 0 10px; /* Set here the padding for the preview text */
+	padding-top: 10px;
+}
+
+.fn-preview	> div > p {
+	line-height: 18px;
+	margin: 0;
+}
+
+/* the title in the previews */
+.fn-preview	> div > h3	{
+	margin: 0 0 6px; /* Set here the offset between title and date */
+	font-size: 14px; /* Set here the size of the title */
+	line-height: 14px;
+}
+
+/* the date in the previews */
+.fn-preview	> div > h4	{
+	margin-bottom: 3px;  /* Set here the offset between date and text */
+	font-size: 10px; /* Set here the size of the date */
+	line-height: 10px;
+}
+
+/* the full post */
+.fn-full-post	{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+/* title in the full post */
+.fn-full-post > h2	{
+	margin: 10px 15px;
+	font-size: 16px; /* Set here the size of the title */
+}
+
+/* the text container in the full post */
+.fn-full-post > div	{
+	width: 95%;
+	margin-left: 15px;
+	overflow: auto;
+	outline: none;
+}
+
+.fn-full-post * {
+	max-width: 100%;
+}
+
+/* navigation bar with rounded corners */
+.fn-navigation	{
+	position: relative;
+	max-width: 100%;
+	height: 30px; /* Set here the height of the footer bar */
+	line-height: 30px; /* Set the line-height to the height, you set above */
+	font-size: 14px; /* Set here the size of the text in the footer bar */
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.fn-navigation .fn-post-count {
+	margin-left: 10px;
+	float: left;
+}
+
+.fn-close-button {
+	display: none;
+	width: 15px; /* Width for the close button */
+	height: 15px; /* Height for the close button */
+	margin: 7px 15px 0 0;
+	float: right;
+	cursor: pointer;
+}
+
+.fn-previous-button, .fn-next-button	{
+	float: right;
+	width: 15px; /* Width for the previous/next buttons */
+	height: 10px; /* Height for the previous/next buttons */
+	margin: 11px 10px 0 0;
+	cursor: pointer;
+}
+
+.fn-container > .fn-preloader	{
+	position: absolute;
+	background: url('../images/fancyNews/preloader.gif') no-repeat; /* Set here the path to the preloader.gif */
+	width: 16px; /* Same width as the preloader.gif width */
+	height: 16px; /* Same height as the preloader.gif height */
+	margin-left: -8px;
+	margin-top: -8px;
+	z-index: 11;
+	top: 50%;
+	left: 50%;
+	display: block;
+}
+
+.fn-container .fa, .fn-navigation .fa {
+	font-family: FontAwesome !important;
+}
+
+/* Vertical Scrolling */
+
+.fn-vertical .fn-news-list .fn-preview {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.fn-vertical .fn-preview > img {
+	float: none;
+	display: block;
+	margin: 10px auto 0;
+}
+
+.fn-vertical .fn-preview > div {
+	padding-top: 0;
+	margin-top: 10px;
+}
+
+.fn-vertical .fn-previous-button, .fn-vertical .fn-next-button	{
+	width: 10px;
+	height: 15px;
+	margin: 8px 10px 0 0;
+}
+
+
+/* Helper */
+.fn-clearfix:before, .fn-clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.fn-clearfix:after { clear: both; }
+.fn-clearfix { zoom: 1; }
+.fn-clear {clear: both;}
+.fn-hidden {display: none;}
+
+
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.mCSB_container{
+	width:auto;
+	margin-right:20px !important;
+	padding-left: 5px !important;
+	overflow:hidden;
+}
+.mCSB_container.mCS_no_scrollbar{
+	margin-right:0;
+}
+.mCS_disabled .mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed .mCSB_container.mCS_no_scrollbar{
+	margin-right:30px;
+}
+.mCustomScrollBox .mCSB_scrollTools{
+	width:16px;
+	height:100%;
+	top:0;
+	right:0;
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+	height:100%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.mCSB_scrollTools .mCSB_buttonUp+.mCSB_draggerContainer{
+	padding-bottom:40px;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+	width:2px;
+	height:100%;
+	margin:0 auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.mCSB_scrollTools .mCSB_dragger{
+	cursor:pointer;
+	width:100%;
+	height:30px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:4px;
+	height:100%;
+	margin:0 auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	text-align:center;
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+	height:20px;
+	overflow:hidden;
+	margin:0 auto;
+	cursor:pointer;
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+	bottom:0;
+	margin-top:-40px;
+}
+/* horizontal scrollbar */
+.mCSB_horizontal .mCSB_container{
+	height:auto;
+	margin-right:0;
+	margin-bottom:30px;
+	overflow:hidden;
+}
+.mCSB_horizontal .mCSB_container.mCS_no_scrollbar{
+	margin-bottom:0;
+}
+.mCS_disabled .mCSB_horizontal .mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed .mCSB_horizontal .mCSB_container.mCS_no_scrollbar{
+	margin-right:0;
+	margin-bottom:30px;
+}
+.mCSB_horizontal.mCustomScrollBox .mCSB_scrollTools{
+	width:100%;
+	height:16px;
+	top:auto;
+	right:auto;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerContainer{
+	height:100%;
+	width:auto;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft+.mCSB_draggerContainer{
+	padding-bottom:0;
+	padding-right:20px;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerRail{
+	width:100%;
+	height:2px;
+	margin:7px 0;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger{
+	width:30px;
+	height:100%;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:100%;
+	height:4px;
+	margin:6px auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight{
+	width:20px;
+	height:100%;
+	overflow:hidden;
+	margin:0 auto;
+	cursor:pointer;
+	float:left;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight{
+	right:0;
+	bottom:auto;
+	margin-left:-40px;
+	margin-top:-16px;
+	float:right;
+}
+
+/* default scrollbar colors and backgrounds */
+.mCustomScrollBox .mCSB_scrollTools{
+	opacity:0.75;
+}
+.mCustomScrollBox:hover .mCSB_scrollTools{
+	opacity:1;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+	background:#000; /* rgba fallback */
+	background:rgba(0,0,0,0.4);
+	filter:"alpha(opacity=40)"; -ms-filter:"alpha(opacity=40)"; /* old ie */
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background:#fff; /* rgba fallback */
+	background:rgba(255,255,255,0.75);
+	filter:"alpha(opacity=75)"; -ms-filter:"alpha(opacity=75)"; /* old ie */
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+	background:rgba(255,255,255,0.85);
+	filter:"alpha(opacity=85)"; -ms-filter:"alpha(opacity=85)"; /* old ie */
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+	background:rgba(255,255,255,0.9);
+	filter:"alpha(opacity=90)"; -ms-filter:"alpha(opacity=90)"; /* old ie */
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight{
+	background-image:url(mCSB_buttons.png);
+	background-repeat:no-repeat;
+	opacity:0.4;
+	filter:"alpha(opacity=40)"; -ms-filter:"alpha(opacity=40)"; /* old ie */
+}
+.mCSB_scrollTools .mCSB_buttonUp{
+	background-position:0 0;
+	/*
+	sprites locations are 0 0/-16px 0/-32px 0/-48px 0 (light) and -80px 0/-96px 0/-112px 0/-128px 0 (dark)
+	*/
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+	background-position:0 -20px;
+	/*
+	sprites locations are 0 -20px/-16px -20px/-32px -20px/-48px -20px (light) and -80px -20px/-96px -20px/-112px -20px/-128px -20px (dark)
+	*/
+}
+.mCSB_scrollTools .mCSB_buttonLeft{
+	background-position:0 -40px;
+	/*
+	sprites locations are 0 -40px/-20px -40px/-40px -40px/-60px -40px (light) and -80px -40px/-100px -40px/-120px -40px/-140px -40px (dark)
+	*/
+}
+.mCSB_scrollTools .mCSB_buttonRight{
+	background-position:0 -56px;
+	/*
+	sprites locations are 0 -56px/-20px -56px/-40px -56px/-60px -56px (light) and -80px -56px/-100px -56px/-120px -56px/-140px -56px (dark)
+	*/
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover{
+	opacity:0.75;
+	filter:"alpha(opacity=75)"; -ms-filter:"alpha(opacity=75)"; /* old ie */
+}
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active{
+	opacity:0.9;
+	filter:"alpha(opacity=90)"; -ms-filter:"alpha(opacity=90)"; /* old ie */
+}

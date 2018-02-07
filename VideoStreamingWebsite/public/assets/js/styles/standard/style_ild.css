@@ -1,0 +1,276 @@
+/*
+	Codo Player "modern" stylesheet
+	Copyright (C) Donato Software House
+*/
+
+.codo-player {
+	visibility: visible!important;
+	opacity: 1;
+	font: 16px Arial;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.codo-player-container {
+	background: black;
+}
+
+/* Controls */
+.codo-player-controls-wrap {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	line-height: 45px;
+	vertical-align: middle;
+	text-shadow: 0 1px 1px black;
+}
+
+.codo-player-controls-shade {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	/*background: #16223c;*/
+	background: #191a1c;
+}
+
+.codo-player-controls {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Play pause buttons */
+.codo-player-controls-play-button {
+	margin: 4px 5px;
+	float: left;
+	cursor: pointer;
+}
+
+.codo-player-controls-play-button:hover {
+	color: #eee;
+	text-shadow: 0 0 5px black;
+}
+
+.codo-player-controls-play-button:before {
+	font-family: "standard";
+	content: "\c0001";
+	font-size: 35px;
+}
+
+.codo-player-controls-pause-button {
+	float: left;
+	margin: 4px 5px;
+	cursor: pointer;
+}
+
+.codo-player-controls-pause-button:before {
+	font-family: "standard";
+	content: "\c0002";
+	font-size: 35px;
+}
+
+/* Title text */
+.codo-player-controls-title-text {
+	float: left;
+	margin: 5px 5px;
+}
+
+/* Time text */
+.codo-player-controls-time-text {
+	float: right;
+	margin: 5px 5px;
+}
+
+/* HD text */
+.codo-player-controls-hd-text {
+	float: right;
+	margin: 5px 5px;
+	cursor: pointer;
+}
+
+.codo-player-controls-hd-text.active {
+	font-weight: bold;
+}
+
+/* Volume slider */
+.codo-player-controls-volume-horizontal {
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 6px;
+	margin: 24px 10px;
+	cursor: pointer;
+	background: #131512;
+}
+
+.codo-player-controls-volume-horizontal-bar {
+	position: relative;
+	height: 100%;
+	background: #143b66;
+}
+
+.codo-player-controls-volume-handle {
+	position: absolute;
+	top: -4px;
+	right: -6px;
+	width: 12px;
+	height: 12px;
+	background: white;
+	border: 1px solid #454545;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.codo-player-controls-volume-handle:hover {
+	top: -5px;
+	right: -7px;
+	width: 14px;
+	height: 14px;
+	background: #eee;
+	-moz-box-shadow: 0px 0px 5px black;
+  	-webkit-box-shadow: 0px 0px 5px black;
+  	box-shadow: 0px 0px 5px black;
+}
+
+/* Fullscreen button */
+.codo-player-controls-fullscreen-off-button, .codo-player-controls-fullscreen-on-button {
+	float: right;
+	margin: 5px 8px 0;
+	cursor: pointer;
+}
+
+.codo-player-controls-fullscreen-off-button:hover {
+	color: #eee;
+	text-shadow: 0 0 5px black;
+}
+
+.codo-player-controls-fullscreen-off-button:before {
+	font-family: "standard";
+	content: "\c0003";
+	font-size: 27px;
+}
+
+.codo-player-controls-fullscreen-on-button:before {
+	font-family: "standard";
+	content: "\c0004";
+	font-size: 27px;
+}
+
+/* Seek slider */
+.codo-player-controls-seek {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 6px;
+	width: 100%;
+	cursor: pointer;
+	background: #131512;
+	/*background: #F47C9A;*/
+	-webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.codo-player-controls-seek.hover {
+	height: 10px;
+	top: -4px;
+}
+
+.codo-player-controls-seek-buffer-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #fff;
+}
+
+.codo-player-controls-seek-progress-bar {
+	position: relative;
+	height: 100%;
+	background: #143b66;
+}
+
+.codo-player-controls-seek-handle {
+	display: none;
+}
+
+/* Overlay*/
+.codo-player-overlay-background {
+	background: #171e14;
+}
+
+.codo-player-overlay-play-button {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	vertical-align: middle;
+	text-shadow: 0px 0px 100px #000;
+}
+
+.codo-player-overlay-play-button:hover {
+	color: #eee;
+}
+
+.codo-player-overlay-play-button:before {
+	font-family: "standard";
+	content: "\c0001";
+	font-size: 120px;
+}
+
+/* Playlist */
+.codo-player-playlist-wrap {
+	color: #454545;
+	text-shadow: 0 1px 1px #fff;
+	letter-spacing: 1px;
+	border: 1px solid #ccc;
+	padding: 0;
+	margin: 0;
+}
+
+.codo-player-playlist-ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.codo-player-playlist-ul li {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ededed", GradientType=0 );
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.codo-player-playlist-ul li span {
+	margin: 0 10px;
+}
+
+.codo-player-playlist-currentClip {
+	font-weight: bold;
+}
+
+/* Font face */
+@font-face {
+	font-family: 'standard';
+	src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjBrUAAAC8AAAAYGNtYXAAWQHGAAABHAAAAIhnYXNwAAAAEAAAAaQAAAAIZ2x5Zj5r0gMAAAGsAAABRGhlYWQBjl49AAAC8AAAADZoaGVhA+IB6QAAAygAAAAkaG10eAkAAKAAAANMAAAAIGxvY2EBCgCyAAADbAAAABJtYXhwAA0AHgAAA4AAAAAgbmFtZVcZpu4AAAOgAAABRXBvc3QAAwAAAAAE6AAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABAAAD//wHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAAEAAAAAwAAACQAAAAEAAAAVAADAAEAAAAkAAMACgAAAFQABAAwAAAACAAIAAIAAAABACD//f//AAAAAAAg//3//wAB/+MAAwABAAAAAAAAAAAADAAAAAAANAAAAAAAAAADAAAAAAAAAAEAAAABAAAAIAAAACAAAAADAAwAAQAMAAQAAAAEAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQBgACABoAGgAAIAABMNAWABQP7AAaDAwAAAAAIAQAAgAcABoAADAAcAABMzESMTMxEjQKCg4KCgAaD+gAGA/oAAAAAEAAD/4AIAAeAABgANABQAGwAAARUnByc3JwcXBycHNTMTNxUjNyc3DwEXIzUXNwIARWo2akXFajZqRcD7RcBFajZsakXARWoB4MBFajZqRUVqNmpFwP57RcBFajY2akXARWoABAAA/+ACAAHgAAYADQAUABsAADczFScHJzchFwcnBzUzNSM1FzcXByU3FSM3JzcgwEVlNmUBNmU2ZUXAwEVlNmX/AEXARWU2wMBFZTZlZTZlRcBAwEVlNmU2RcBFZTYAAQAAAAEAAOMeUUJfDzz1AAsCAAAAAADQN47AAAAAANA3jsAAAP/gAgAB4AAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAACAAABAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAACAABgAgAAQAIAAAACAAAAAAAAAAAKABQAHgAsAEAAcgCiAAAAAQAAAAgAHAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAA4AAAABAAAAAAACAA4ARwABAAAAAAADAA4AJAABAAAAAAAEAA4AVQABAAAAAAAFABYADgABAAAAAAAGAAcAMgABAAAAAAAKADQAYwADAAEECQABAA4AAAADAAEECQACAA4ARwADAAEECQADAA4AJAADAAEECQAEAA4AVQADAAEECQAFABYADgADAAEECQAGAA4AOQADAAEECQAKADQAYwBpAGMAbwBtAG8AbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('truetype'),
+	url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVIAAoAAAAABQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAXgAAAF4Kf7aV09TLzIAAAJsAAAAYAAAAGAIIwa1Y21hcAAAAswAAACIAAAAiABZAcZnYXNwAAADVAAAAAgAAAAIAAAAEGhlYWQAAANcAAAANgAAADYBjl49aGhlYQAAA5QAAAAkAAAAJAPiAelobXR4AAADuAAAACAAAAAgCQAAoG1heHAAAAPYAAAABgAAAAYACFAAbmFtZQAAA+AAAAFFAAABRVcZpu5wb3N0AAAFKAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAACMDx0AAACRER0AAAAJHQAAAW8SAAkBAQgPERMWHCIoLmljb21vb25pY29tb29udTB1MXUyMHVDMDAwMXVDMDAwMnVDMDAwM3VDMDAwNAAAAgGJAAYACAEBBAcKDRs5h9P8lA78lA78lA77lA7r+DQV99T7VPvU+1QFDsv4NBX3NIuL/BT7NIsF93T4FBX3NIuL/BT7NIsFDviU+HQVi/tURtAhIVXB9fVG0AX7WUYV9SFVVSH1RkaL91T3VIsF94/8GRXQ0Iv7VPtUi9DQIfXBwQX7AFUVISHQRvtUi4v3VNBG9fUFDqv3VBX3VIuL+1RG0CYmVcHw8AX3yosV8CZVVSbwRkaL91T3VIsFi8sV+1SLi/dU0Ebw8MFVJiYF+5TBFdDQi/tU+1SL0NAm8MHBBQ74lBT4lBWLDAoAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABAAAD//wHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAAEAAAAAwAAACQAAAAEAAAAVAADAAEAAAAkAAMACgAAAFQABAAwAAAACAAIAAIAAAABACD//f//AAAAAAAg//3//wAB/+MAAwABAAAAAAAAAAAADAAAAAAANAAAAAAAAAADAAAAAAAAAAEAAAABAAAAIAAAACAAAAADAAwAAQAMAAQAAAAEAAEAAf//AA8AAQAAAAEAAE9Y5GJfDzz1AAsCAAAAAADQN47AAAAAANA3jsAAAP/gAgAB4AAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAACAAABAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAACAABgAgAAQAIAAAACAAAAAABQAAAIAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

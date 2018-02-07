@@ -1,0 +1,135 @@
+/*
+	Codo Player 'share' plugin stylesheet
+	Copyright (C) 2012-2013 Donato Software House
+*/
+
+.codo-player-share-wrap {
+	/*position: relative;*/ 
+	left: 0px;
+	bottom: 0px;
+	z-index: 99;
+	width: 100%;
+}
+
+.codo-player-share-wrap-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 1; 
+	filter: alpha(opacity=30);
+	background: #2c2d2f;
+	/*-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;*/
+}
+
+.codo-palyer-share-fb-button {
+	position: relative;  
+	margin: 5px;
+	display: block;
+	float: left;
+	cursor: pointer;
+	font-size: 25px;
+	color:#ccc;
+	width: 11%;
+	text-align: center;
+}
+.codo-palyer-share-fb-button a{
+	color:#ccc;
+}
+.codo-palyer-share-fb-button a:hover{
+	color:#fff;
+}
+.codo-palyer-share-fb-button:hover {
+	background-position: bottom left;
+}
+
+.codo-palyer-share-twitter-button {
+	position: relative; 
+	font-size: 25px;
+	margin: 5px;
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 11%;
+	text-align: center;
+	color:#ccc;
+	
+}
+@media (max-width: 768px){
+	.codo-palyer-share-fb-button {
+		width: 50%;
+		float: left;
+		margin: 0;
+	}
+}
+.codo-palyer-share-twitter-button a{
+	color:#ccc;
+}
+.codo-palyer-share-twitter-button a:hover{
+	color:#fff;
+}
+
+.codo-palyer-share-twitter-button:hover {
+	background-position: bottom right;
+}
+.codo-palyer-share-fb-button:hover,.codo-palyer-share-twitter-button:hover{
+	color:#fff;
+}
+
+.codo-palyer-share-fb-button span{
+	font-style: italic;
+	font-size: 15px !important;
+	margin-left:5px;
+}
+.atm-f{
+	display: none !important;
+}
+.at4-icon.aticon-addthis, .at4-icon.aticon-compact, .at4-icon.aticon-expanded, .at4-icon.aticon-more{
+	position: relative;
+	top:-3px;
+}
+.at-share-btn ,.at-svc-compact{
+	position: relative;
+	top:5px;
+	background: #2c2d2f !important;
+}
+.at4-icon.aticon-addthis, .at4-icon.aticon-compact, .at4-icon.aticon-expanded, .at4-icon.aticon-more{
+	background:url("../images/share.png") no-repeat left !important;
+}
+#facebook.pluginButtonIcon{
+	height: 0 !important;
+}
+#facebook.pluginButton{
+	background: none !important;
+}
+.fb-like{
+	position: relative;
+	top:-5px;
+
+}
+#videorating img{
+    max-width: none;
+    width: auto;
+}
+#videorating{
+	width: 150px !important;
+	max-width: 250px;
+}
+.codo-palyer-rating-button{
+	width: 100%;
+	position: relative; 
+	font-size: 20px;
+	margin:auto 5px 5px 5px;
+	display: block;
+	float: left;
+	cursor: pointer;
+
+}
+/*#subscribe .panel-heading{
+	background-color: #FFB959 !important;
+	border: #FFB959 !important;
+}*/
+#messages{
+	color: #ec567b;
+}
